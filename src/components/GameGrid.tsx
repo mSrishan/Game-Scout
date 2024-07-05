@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import apiClients from "../services/api-clients";
+import apiClients from "../services/api-client";
 import { Text } from "@chakra-ui/react";
 
 interface Game {
