@@ -4,7 +4,8 @@ import apiClient from "../services/api-client";
 
 interface Genre {
     id: number;
-    name: string;
+  name: string;
+  image_background: string;
 }
 
 interface FetchGenresResponse {
