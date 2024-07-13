@@ -20,7 +20,11 @@ function App() {
       }}
     >
       <GridItem area="nav">
-        <NavBar />
+        <NavBar
+          onSearch={function (searchText: string): void {
+            throw new Error("Function not implemented.");
+          }}
+        />
       </GridItem>
       <Show above="lg">
         <GridItem area="aside" paddingX={5}>
