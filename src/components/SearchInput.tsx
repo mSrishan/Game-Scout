@@ -16,15 +16,21 @@ const SearchInput = ({ onSearch }: Props) => {
         if (ref.current) onSearch(ref.current.value);
       }}
     >
-      <InputGroup>
-        <InputLeftElement children={<BsSearch />} />
-        <Input
-          ref={ref}
-          borderRadius={20}
-          placeholder="Search games..."
-          variant="filled"
-        />
-      </InputGroup>
+      <form
+        onSubmit={(Event) => {
+          Event.preventDefault();
+        }}
+      >
+        <InputGroup>
+          <InputLeftElement children={<BsSearch />} />
+          <Input
+            ref={ref}
+            borderRadius={20}
+            placeholder="Search games..."
+            variant="filled"
+          />
+        </InputGroup>
+      </form>
     </form>
   );
 };
